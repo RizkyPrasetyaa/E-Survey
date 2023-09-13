@@ -8,6 +8,45 @@
     <title>Website Kemenag</title>
   </head>
   <body>
+    <!-- <div class="container-fluid">
+      <h3>SELAMAT DATANG</h3>
+      <div class="row centerDiv">
+        <div class="col-sm-12 my-auto">
+          <div class="card border-0">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="card-body">
+                  <img src="../assets/img/logokemeag.png" class="img-fluid rounded-start shadow" alt="..." />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card-body">
+                  <div class="mb-5 text-center">
+                    <img src="../assets/img/logokemeag.png" class="img-fluid" width="70" alt="logo ahmad syarifudin" title="ahmad, syarifudin" />
+                    <h2 class="h5 mt-5">Login</h2>
+                  </div>
+                  <form>
+                    <div class="mb-3">
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                      <div id="emailHelp" class="form-text">fill in your username</div>
+                    </div>
+                    <div class="mb-3">
+                      <input type="password" class="form-control" id="exampleInputPassword1" />
+                      <div id="emailHelp" class="form-text">fill in your password</div>
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                      <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">SIGN IN</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
     <!-- Navbar -->
     <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
@@ -36,7 +75,7 @@
     Akhir Navbar -->
     <!-- Masuk -->
 
-    <h3>SELAMAT DATANG</h3>
+    <h3 class="container-lg">SELAMAT DATANG</h3>
     <div class="container">
       <div class="logo">
         <img src="../assets/img/logokemeag.png" alt="Logo Kemenag" />
@@ -54,6 +93,7 @@
               <label for="password">Kata sandi</label>
               <input type="password" id="password" name="password" required />
             </div>
+            <label> <input type="checkbox" onclick="myFunction()" /> Tampilkan Password </label>
             <div class="form-group">
               <button type="submit">Masuk</button>
             </div>
@@ -61,7 +101,17 @@
         </div>
       </div>
     </div>
-
     <!-- Akhir Masuk -->
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById('password');
+        if (x.type === 'password') {
+          x.type = 'text';
+        } else {
+          x.type = 'password';
+        }
+      }
+    </script>
   </body>
 </html>
